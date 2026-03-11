@@ -10,6 +10,7 @@
     width: 100%;
     height: 100vh;
     position: relative;
+    color: white;
 }
 nav{
     display: flex;
@@ -19,6 +20,7 @@ nav{
 }
 .logo{
     width: 100px;
+    background-color: antiquewhite;
 }
 .list-items{
     list-style: none;
@@ -30,11 +32,11 @@ nav{
     text-decoration: none;
     font-weight: 800;
     font-size: 20px;
-    color: rgb(14, 3, 3);
+    color: rgb(231, 236, 236);
 }
 .links:hover{
     text-decoration: underline;
-    color: rgb(224, 235, 236);
+    color: rgb(117, 219, 228);
 }
 .home-content{
     margin: 13% 0PX 0PX 8%;
@@ -46,8 +48,10 @@ nav{
     
 }
 #lname{
-  color: rgb(245, 249, 249);  
- 
+  color: rgb(61, 231, 231);  
+}
+h3{
+     color: rgb(61, 231, 231); 
 }
 #user-details{
     line-height: 1.5;
@@ -78,9 +82,12 @@ nav{
     transform: translate(-50%);
     transition: bottom 2s, left 1s;
 }
+
 .home-img:hover #girl{
     left: 30%;
 }
+
+
 #about{
     margin: 50% 7% 0px 8%;
 }
@@ -222,4 +229,63 @@ html{
 ::-webkit-scrollbar-thumb{
     background-color: rgb(57, 202, 224);
     border-radius: 10px;
+}
+
+@media (max-width: 768px)(min-width: 450px) {
+
+  nav{
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .list-items{
+    display: block;
+    margin: 10px 0;
+  }
+
+  .home-content{
+    margin: 20% 5% 0 5%;
+    text-align: center;
+  }
+
+  #username{
+    font-size: 32px;
+  }
+
+  .home-img{
+    position: static;
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+  }
+
+  .group1{
+    position: relative;
+    left: 0;
+    transform: none;
+  }
+
+  .aboutbBody{
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .skilContent{
+    grid-template-columns: 1fr;
+  }
+
+  .iconCollection{
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .img1{
+    width: 200px;
+    margin: auto;
+  }
+
+  footer{
+    margin: 20% 0 0 0;
+  }
+
 }
